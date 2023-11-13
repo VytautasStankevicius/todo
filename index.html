@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+
+        <form>
+            <div class="row mb-5 bg-light p-3">
+                <div class="col-xl-3 col-xs-12">
+                    <label for="Task-Title"> </label>
+                    <input type="text" class="form-control" id="Task-Title" placeholder="Iveskite uzduoties pavadinimą">
+                </div>
+                <div class="col-xl-3 col-xs-12">
+                    <label for="priority-pick">Priority level</label>
+                    <select id="priority-pick" class="form-select" aria-label="Default select example">
+                        <option value="1">High</option>
+                        <option value="2">Medium</option>
+                        <option value="3">Low</option>
+                    </select>
+                </div>
+                <div class="col-xl-3 col-xs-12">
+                    <label for="pick-date">Due date</label>
+                    <input type="date" class="form-control" id="pick-date">
+                </div>
+                <div class="col-xl-3 col-xs-12 mt-3">
+                    <button type="button" class="btn btn-primary" id="addTaskBtn">Add task</button>
+                </div>
+            </div>
+        </form>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="bg-light" scope="col"> <img class="table-icons" src="img/stats.png" alt="stats"></th>
+                    <th class="text-center bg-light" scope="col">Subject</th>
+                    <th class="text-center bg-light priority" scope="col">Priority</th>
+                    <th class="text-center bg-light" scope="col">Due date</th>
+                    <th class="text-center bg-light" scope="col">Status</th>
+                    <th class="text-center bg-light" scope="col">Percent completed</th>
+                    <th class="text-center bg-light" scope="col">Modified on</th>
+                    <th class="text-center bg-light priority" scope="col">Delete task</th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
