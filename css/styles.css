@@ -1,0 +1,38 @@
+td {
+  text-align: center;
+}
+
+th{
+  text-align: center;
+}
+
+.crossed {
+  text-decoration:line-through;
+}
+
+
+.deleteButton {
+  background-color:red;
+  border: none;
+  color: white;
+  padding: 7px 15px;
+  font-weight: 700;
+  border-radius:20px;
+}
+
+
+.priority {
+  font-weight: 700;
+  border-radius: 20px;
+  color: white!important;
+}
+
+.priority.low {
+  background-color: green;
+}
+.priority.medium {
+  background-color: cornflowerblue;
+}
+.priority.high {
+  background-color: tomato;
+}
