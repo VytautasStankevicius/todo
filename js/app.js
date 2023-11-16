@@ -8,9 +8,9 @@ const addTask = (taskData, index) => {
   const checkboxImg = document.createElement('img');
 
   if (taskData.isChecked) {
-    checkboxImg.src = 'img/check.png';
+    checkboxImg.src = 'img/greencheckbox.png';
   } else {
-    checkboxImg.src = 'img/not-check.png';
+    checkboxImg.src = 'img/emptyblackcheckbox.png';
   }
 
   checkboxImg.addEventListener('click', () => {
